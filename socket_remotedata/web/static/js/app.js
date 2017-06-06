@@ -19,3 +19,15 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+
+(function () {
+    var startup = function () {
+        // Start the Elm App.
+
+        const elmDiv = document.getElementById('elm-main')
+            , elmApp = Elm.Main.embed(elmDiv)
+
+    };
+
+    window.addEventListener('load', startup, false);
+}());
